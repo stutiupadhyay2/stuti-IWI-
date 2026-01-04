@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions and Scope in JavaScript</title>
+</head>
+<body>
+
+    <h2>JavaScript Functions and Scope Demo</h2>
+
+    <script>
+        // User-defined function
+        function scopeDemo() {
+
+            var a = 10;      // function scope
+            let b = 20;      // block scope
+            const c = 30;    // block scope (constant)
+
+            document.write("Inside Function:<br>");
+            document.write("var a = " + a + "<br>");
+            document.write("let b = " + b + "<br>");
+            document.write("const c = " + c + "<br><br>");
+
+            if (true) {
+                var x = 100;     // accessible outside block
+                let y = 200;     // block scope
+                const z = 300;   // block scope
+
+                document.write("Inside Block:<br>");
+                document.write("var x = " + x + "<br>");
+                document.write("let y = " + y + "<br>");
+                document.write("const z = " + z + "<br><br>");
+            }
+
+            document.write("Outside Block but Inside Function:<br>");
+            document.write("var x = " + x + "<br>");
+        }
+
+        // Function call
+        scopeDemo();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+
+            if (name == "") {
+                alert("Name is required");
+                return false;
+            }
+
+            alert("Form submitted successfully");
+            return true;
+        }
+
+        function checkInput() {
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                document.getElementById("msg").innerHTML = "Please enter your name";
+            } else {
+                document.getElementById("msg").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Form Validation Example</h2>
+
+    <form onsubmit="return validateForm()">
+        Name:
+        <input type="text" id="name" oninput="checkInput()">
+        <br>
+        <span id="msg" style="color:red;"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

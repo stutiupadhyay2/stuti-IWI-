@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Drawing</title>
+</head>
+<body>
+
+    <h2>Canvas Example</h2>
+
+    <canvas id="myCanvas" width="300" height="200" style="border:1px solid black;">
+    </canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Rectangle
+        ctx.fillStyle = "green";
+        ctx.fillRect(20, 20, 120, 60);
+
+        // Circle
+        ctx.beginPath();
+        ctx.arc(200, 80, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+    </script>
+
+</body>
+</html>

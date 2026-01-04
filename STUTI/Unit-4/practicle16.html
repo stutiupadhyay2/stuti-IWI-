@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show / Hide Elements</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="text">This is a text message</h2>
+
+    <button onclick="toggleText()">Show / Hide</button>
+
+    <script>
+        function toggleText() {
+            document.getElementById("text").classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>

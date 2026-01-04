@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Stuti Upadhyay</h1> <!-- EDIT ME: Name -->
+    <p>BCA Student • C & Web Developer</p>
+    <img src="c:\Users\ASUS\OneDrive\Documents\WhatsApp Image 2026-01-04 at 10.40.25 PM.jpeg" alt="Portrait of stuti Upadhyay"
+    width="150" height="150" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a BCA student with Data Science specialization and have knowledge of C programming and web technologies
+        (HTML, CSS, JavaScript). I enjoy building simple websites and practicing
+        programming logic in C. Currently working on my skills set in other programming languages 
+    , DSA and web development frameworks. Making mini projects to apply what I learn.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>C Programming</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (Basics)</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Mini C Programs</h3>
+        <p>Collection of small C programs (calculator, sorting, searching).</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: stuti.upadhyay@example.com</p> <!-- EDIT ME -->
+      <p>
+        <a href="https://github.com/stutiupadhyay2" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/stuti-upadhyay-548037389/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> stuti Upadhyay</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>       
